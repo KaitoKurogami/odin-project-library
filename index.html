@@ -7,7 +7,47 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Library</h1>
+    <div class="div-button">
+        <button>New Book</button>
+    </div>
+    <dialog id="FormDialog">
+        <form method="dialog">
+            <p>Add new book</p>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label for="author">Author:</label>
+                <input type="text" name="author" id="author" required>
+            </div>
+            <div>
+                <label for="pages">Pages:</label>
+                <input type="number" name="pages" id="pages" required min="1">
+            </div>
+            <div>
+                <label for="read">Read:</label>
+                <input type="checkbox" id="read" name="read">
+            </div>
+            <div>
+                <button id="cancel" value="cancel" formmethod="dialog">Cancel</button>
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </dialog>
+    <div class="cards-section">
+        <div hidden class="card">
+            <p class="title">Title</p>
+            <p class="author">Author</p>
+            <p class="pages">Pages</p>
+            <p class="read">Read</p>
+            <div class="buttons">
+                <button class="button-read">Read</button>
+                <button class="button-delete">Delete</button>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
